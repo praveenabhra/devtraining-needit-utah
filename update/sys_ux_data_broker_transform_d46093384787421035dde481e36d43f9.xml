@@ -27,7 +27,10 @@
   
   // Concatenate the user name from the Data Resource Configuration
   // with a string
-    var newString = input.userFullName + "'s Next NeedIt";
+  var newString = gs.getUserName() + "'s Next NeedIt";
+  if(input && input.userFullName && input.userFullName != ''){
+	newString = input.userFullName + "'s Next NeedIt";
+  }
     return newString;
   
 }]]></script>
@@ -35,14 +38,14 @@
         <sys_created_by>praveen.billakanti</sys_created_by>
         <sys_created_on>2024-06-25 06:43:04</sys_created_on>
         <sys_id>d46093384787421035dde481e36d43f9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Add User to Text String</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_ux_data_broker_transform_d46093384787421035dde481e36d43f9</sys_update_name>
         <sys_updated_by>praveen.billakanti</sys_updated_by>
-        <sys_updated_on>2024-06-25 06:43:04</sys_updated_on>
+        <sys_updated_on>2024-06-25 07:18:44</sys_updated_on>
     </sys_ux_data_broker_transform>
     <sys_translated_text action="delete_multiple" query="documentkey=d46093384787421035dde481e36d43f9"/>
 </record_update>

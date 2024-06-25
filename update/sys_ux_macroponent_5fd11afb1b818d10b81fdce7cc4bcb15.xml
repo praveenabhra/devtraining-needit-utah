@@ -1851,12 +1851,13 @@
                                         "value": false
                                     },
                                     "primaryValue": {
-                                        "type": "TRANSLATION_LITERAL",
-                                        "value": {
-                                            "code": null,
-                                            "comment": "",
-                                            "message": "My Next NeedIt"
-                                        }
+                                        "binding": {
+                                            "address": [
+                                                "record_header_text",
+                                                "output"
+                                            ]
+                                        },
+                                        "type": "DATA_OUTPUT_BINDING"
                                     },
                                     "recordTags": {
                                         "type": "JSON_LITERAL",
@@ -2100,7 +2101,7 @@
             },
             "headerConfigId": {
                 "type": "JSON_LITERAL",
-                "value": "ee8c93a04787021035dde481e36d4369"
+                "value": ""
             },
             "highlightedValueConfigId": {
                 "type": "JSON_LITERAL",
@@ -2149,6 +2150,31 @@
             "viewRuleConfigId": {
                 "type": "JSON_LITERAL",
                 "value": ""
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "d46093384787421035dde481e36d43f9",
+            "type": "TRANSFORM"
+        },
+        "dependencies": {},
+        "elementId": "record_header_text",
+        "elementLabel": "Record Header Text",
+        "eventMappings": [
+            
+        ],
+        "inputValues": {
+            "userFullName": {
+                "binding": {
+                    "address": [
+                        "user",
+                        "fullName"
+                    ],
+                    "category": "session"
+                },
+                "type": "CONTEXT_BINDING"
             }
         },
         "readEvaluationMode": "EAGER"
@@ -2348,9 +2374,6 @@
   "message" : "All Active NeedIts",
   "comment" : ""
 }, {
-  "message" : "My Next NeedIt",
-  "comment" : ""
-}, {
   "message" : "NeedIt",
   "comment" : ""
 }, {
@@ -2377,14 +2400,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-01-21 15:00:21</sys_created_on>
         <sys_id>5fd11afb1b818d10b81fdce7cc4bcb15</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_ux_macroponent_5fd11afb1b818d10b81fdce7cc4bcb15</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-24 12:57:53</sys_updated_on>
+        <sys_updated_by>praveen.billakanti</sys_updated_by>
+        <sys_updated_on>2024-06-25 07:16:17</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=5fd11afb1b818d10b81fdce7cc4bcb15"/>
 </record_update>
